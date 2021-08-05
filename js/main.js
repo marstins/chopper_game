@@ -232,7 +232,7 @@ function start() {
 
     function explosion1(enemy1X, enemy1Y) {
         $('.background-game').append('<div class="explosion1"></div>');
-        $('.explosion1').css('background', 'url(../img/explosao.png');
+        $('.explosion1').css('background', 'url(img/explosao.png');
         $('.explosion1').css('top', enemy1Y);
         $('.explosion1').css('left', enemy1X);
         $('.explosion1').animate({width: 200, opacity: 0}, 'slow');
@@ -249,7 +249,7 @@ function start() {
 
     function explosion2(enemy2X, enemy2Y) {
         $('.background-game').append('<div class="explosion2"></div>');
-        $('.explosion2').css('background', 'url(../img/explosao.png');
+        $('.explosion2').css('background', 'url(img/explosao.png');
         $('.explosion2').css('top', enemy2Y);
         $('.explosion2').css('left', enemy2X);
         $('.explosion2').animate({width: 200, opacity: 0}, 'slow');
@@ -311,19 +311,19 @@ function start() {
 
     function energy() {
         if (currentEnergy === 3) {
-            $('.energybar').css('background', 'url(../img/energia3.png)');
+            $('.energybar').css('background', 'url(img/energia3.png)');
         };
 
         if (currentEnergy === 2) {
-            $('.energybar').css('background', 'url(../img/energia2.png)');
+            $('.energybar').css('background', 'url(img/energia2.png)');
         };
 
         if (currentEnergy === 1) {
-            $('.energybar').css('background', 'url(../img/energia1.png)');
+            $('.energybar').css('background', 'url(img/energia1.png)');
         };
 
         if (currentEnergy === 0) {
-            $('.energybar').css('background', 'url(../img/energia0.png)');
+            $('.energybar').css('background', 'url(img/energia0.png)');
             gameOver();
         };
     };
