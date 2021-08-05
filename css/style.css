@@ -8,14 +8,47 @@
     src: url(../font/ANODETONOONE.TTF);
 }
 
+body {
+    background: url(../img/fundo.jpg);
+}
+
 h1 {
     font-family: Title;
     font-size: 40px;
     color: var(--main-brown);
 }
 
-body {
-    background: url(../img/fundo.jpg);
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+li {
+    font-size: 25px;
+    font-family: Title;
+    color: #fff;
+    display: inline-block;
+}
+
+.scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 80px;
+    position: absolute;
+    top: 550px;
+}
+
+.energybar {
+    width: 140px;
+    height: 39px;
+    position: absolute;
+    left: 750px;
+    top: 7px;
 }
 
 .container {
@@ -33,7 +66,8 @@ body {
     border: solid #fff;
 }
 
-.start-button {
+.button {
+    font-family: Title;
     background: #fff;
     border: none;
     cursor: pointer;
@@ -43,7 +77,7 @@ body {
     transition: .2s;
 }
 
-.start-button:hover {
+.button:hover {
     color: var(--hover-red);
 }
 
@@ -63,6 +97,13 @@ body {
     left: 8px;
     top: 179px;
     background: url(../img/apache.png);
+}
+
+.shot {
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background: url(../img/disparo.png);
 }
 
 .enemy1 {
@@ -90,6 +131,20 @@ body {
     left: 10px;
     top: 464px;
     background: url(../img/amigo.png);
+}
+
+.end {
+    width: 355px;
+    height: 200px;
+    background: #fff;
+    margin: 100px auto auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.endMessage {
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .anima1 {
@@ -167,4 +222,58 @@ body {
 @-o-keyframes play2 {
     from{background-position: 0px;}
     to {background-position: -528px;}
+}
+
+.explosion1 {
+    width: 15px;
+    height: 87px;
+    position: absolute;
+}
+
+.explosion2 {
+    width: 15px;
+    height: 87px;
+    position: absolute;
+}
+
+.explosion3 {
+    width: 44px;
+    height: 51px;
+    position: absolute;
+}
+
+.anima4 {
+    width: 44px;
+    height: 51px;
+    background: url(../img/amigo_morte.png);
+    animation: play3 .5s steps(7) infinite;
+    -webkit-animation: play3 .5s steps(7) infinite;
+    -moz-animation: play3 .5s steps(7) infinite;
+    -ms-animation: play3 .5s steps(7) infinite;
+    -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+    from{background-position: 0px;}
+    to {background-position: -308px;}
+}
+
+@-webkit-keyframes play3 {
+    from{background-position: 0px;}
+    to {background-position: -308px;}
+}
+
+@-moz-keyframes play3 {
+    from{background-position: 0px;}
+    to {background-position: -308px;}
+}
+
+@-ms-keyframes play3 {
+    from{background-position: 0px;}
+    to {background-position: -308px;}
+}
+
+@-o-keyframes play3 {
+    from{background-position: 0px;}
+    to {background-position: -308px;}
 }
