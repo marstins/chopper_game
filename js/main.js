@@ -186,6 +186,7 @@ function start() {
 
         if(collision3.length > 0) {
             saved++;
+            points += 200;
             savedSound.play();
 
             $('.ally').remove();
@@ -220,6 +221,7 @@ function start() {
 
         if(collision6.length > 0) {
             dead++;
+            points -= 200;
             let allyX = parseInt($('.ally').css('left'));
             let allyY = parseInt($('.ally').css('top'));
             explosion3(allyX, allyY);
