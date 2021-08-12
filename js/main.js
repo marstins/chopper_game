@@ -88,9 +88,9 @@ function start() {
         };
     };
 
-    function accelerate(i) {
+    function accelerate(key) {
         setInterval(function() {
-            SPEED[i]['startSpeed'] += SPEED[i]['increment'];
+            SPEED[key]['startSpeed'] += SPEED[key]['increment'];
         }, 8000);
     };
 
